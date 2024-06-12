@@ -21,7 +21,7 @@ root.render(
   
     <Provider store={store}>
     <Router>
-      <News />
+      <Navigator />
 
     </Router>
     </Provider>
