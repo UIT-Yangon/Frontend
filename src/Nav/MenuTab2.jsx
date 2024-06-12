@@ -79,6 +79,10 @@ function Item2(){
               text: 'Pdf',
               link: '/about/pdf'
             },
+            {
+              text: 'Blog',
+              link: '/about/blog'
+            },
           ]
         }
       ];

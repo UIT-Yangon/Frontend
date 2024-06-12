@@ -36,6 +36,8 @@ import ES from './subLInks/Degree/Bachelor/ES/ES';
 import Csec from './subLInks/Degree/Bachelor/Csec/Csec';
 import Networking from './subLInks/Degree/Bachelor/Networking/Networking';
 
+import Blog from './Blog/Blog/Blog';
+
 
 export default function Navigator() {
 
@@ -79,6 +81,8 @@ export default function Navigator() {
             <Route path="/academic/degree/bachelor/es" element={<ES />} />
             <Route path="/academic/degree/bachelor/csec" element={<Csec />} />
             <Route path="/academic/degree/bachelor/networking" element={<Networking />} />
+
+            <Route path="/about/blog" element={<Blog />} />
 
             
 
