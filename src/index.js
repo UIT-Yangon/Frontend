@@ -21,6 +21,7 @@ root.render(
   
     <Provider store={store}>
     <Router>
+      
       <Navigator />
 
     </Router>

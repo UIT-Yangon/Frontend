@@ -84,21 +84,21 @@ const PaginatedItems = () => {
 
   return (
     <div className='pt-[56px] pb-[72px] flex flex-col gap-[56px]'>
-      <div className="Categories flex flex-row w-[100%] md:w-[70%] lg:w-[60%] xl:w-[20%]  justify-between items-center mb-2">
-          <p className="text-[#1c1d20] opacity-50 text-[11px] md:text-[20px]">Filter By:</p>
+      <div className="Categories flex flex-row w-[70%] lg:w-[40%] xl:w-[25%]  justify-between items-center mb-2">
+          <p className="text-[#1c1d20] opacity-50 text-[16px] md:text-[20px]">Filter By:</p>
           {categories.map((category,index) => (
             <div className="relative cursor-pointer" key={index} onClick={()=>handleCategoryChange(category.title)}>
-              <p className="text-[#1c1d20] text-[13px] md:text-[20px]" style={{ opacity: selectedCategory === category.title ? 1 : 0.5 }}>{category.title}</p>
-              <span className="text-[#1c1d20] text-[8px] md:text-[12px] absolute" style={{left:'100%',top:0, opacity: selectedCategory === category.title ? 1 : 0.5 }}>{category.count}</span>
+              <p className="text-[#1c1d20] text-[16px] md:text-[20px]" style={{ opacity: selectedCategory === category.title ? 1 : 0.5 }}>{category.title}</p>
+              <span className="text-[#1c1d20] text-[10px] md:text-[12px] absolute" style={{left:'100%',top:0, opacity: selectedCategory === category.title ? 1 : 0.5 }}>{category.count}</span>
             </div>
             
           ))}
         </div>
-      <ul className='flex flex-row justify-between w-full items-center flex-wrap gap-y-[20px]'>
+      <ul className='flex flex-row sm:justify-between justify-center w-full items-center flex-wrap sm:gap-y-[20px] gap-y-[30px]'>
         {currentItems.map((item) => (
           <li key={item.id}>
             <div className='flex flex-col gap-[20px]'>
-                <div className='w-[550px] h-[380px] rounded-[32px] bg-[#d9d9d9]'></div>
+                <div className='xl:w-[550px] xl:h-[380px] w-[300px] h-[350px] rounded-[32px] bg-[#d9d9d9]'></div>
                 <div className='flex flex-col gap-[8px] '>
                     <div className='flex items-center'>
                         <p className='text-[#3798a6] mt-[-6px] p-[5px]'>.</p>
@@ -147,6 +147,10 @@ const StyledPaginate = styled(ReactPaginate)`
         color: white;
     }
 
+    @media (max-width: 640px) {
+      margin: 0 1px;
+    }
+
     a {
       width: 40px;
       height: 40px;
@@ -156,7 +160,7 @@ const StyledPaginate = styled(ReactPaginate)`
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      
+      padding-top: 2px;
       
 
       &:hover {
@@ -168,6 +172,13 @@ const StyledPaginate = styled(ReactPaginate)`
       &.disabled {
         color: #ddd;
         cursor: not-allowed;
+      }
+
+      @media (max-width: 640px) {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+        
       }
     }
   }
