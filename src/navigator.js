@@ -35,6 +35,7 @@ import BIS from './subLInks/Degree/Bachelor/BIS/BIS';
 import ES from './subLInks/Degree/Bachelor/ES/ES';
 import Csec from './subLInks/Degree/Bachelor/Csec/Csec';
 import Networking from './subLInks/Degree/Bachelor/Networking/Networking';
+import News from "./News/News";
 
 import Blog from './Blog/Blog/Blog';
 
@@ -72,6 +73,7 @@ export default function Navigator() {
             <Route path="/about/conference/:id" element={<ChildConference />} />
             
             <Route path="/about/pdf" element={<Pdf />} />
+            <Route path="/about/news" element={<News />} />
 
             {/* for majors sublink */}
             <Route path="/academic/degree/bachelor/hpc" element={<HPC />} />
