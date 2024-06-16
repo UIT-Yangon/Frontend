@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Frontend/static/css/main.c5d2b90d.css",
-    "main.js": "/Frontend/static/js/main.346d138a.js",
+    "main.css": "/Frontend/static/css/main.25bddb6c.css",
+    "main.js": "/Frontend/static/js/main.95867fd0.js",
     "static/js/453.427611d3.chunk.js": "/Frontend/static/js/453.427611d3.chunk.js",
     "static/media/library_1.png": "/Frontend/static/media/library_1.7b1e25af5f2c2b9636fc.png",
     "static/media/Teacher_4.png": "/Frontend/static/media/Teacher_4.a2af46d2b367b509a7d1.png",
@@ -20,23 +20,18 @@
     "static/media/High_Performance_Computing.png": "/Frontend/static/media/High_Performance_Computing.5b7fd5457aa1f3c3d235.png",
     "static/media/Knowledge_Engineering.png": "/Frontend/static/media/Knowledge_Engineering.c04d0212ff62fa735a4a.png",
     "static/media/UIT-Logo-big.png": "/Frontend/static/media/UIT-Logo-big.c71e3f6b12626da70ad7.png",
-    "static/media/gitMerge.svg": "/Frontend/static/media/gitMerge.39fc17ab7e923636afa3.svg",
-    "static/media/eye.svg": "/Frontend/static/media/eye.815d223db822dfca4339.svg",
-    "static/media/mark.svg": "/Frontend/static/media/mark.dffd82ab3182a2489d87.svg",
-    "static/media/markFule.svg": "/Frontend/static/media/markFule.80db9824cf8b375cfdd4.svg",
-    "static/media/rocket.svg": "/Frontend/static/media/rocket.1181a0b75f0aa9a74504.svg",
-    "static/media/clock.svg": "/Frontend/static/media/clock.71455d362f4476eccc89.svg",
-    "static/media/x.svg": "/Frontend/static/media/x.a4422cbd68dac8878a99.svg",
+    "static/media/revicons.eot": "/Frontend/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/Frontend/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/Frontend/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Frontend/index.html",
-    "static/media/user.svg": "/Frontend/static/media/user.de7effb91847690ae0ae.svg",
     "static/media/plus.svg": "/Frontend/static/media/plus.83f502a2cbcefe0ac030b4ddb0461951.svg",
     "static/media/minus.svg": "/Frontend/static/media/minus.9ebc7155006a3829684b987f7b2960f4.svg",
-    "main.c5d2b90d.css.map": "/Frontend/static/css/main.c5d2b90d.css.map",
-    "main.346d138a.js.map": "/Frontend/static/js/main.346d138a.js.map",
+    "main.25bddb6c.css.map": "/Frontend/static/css/main.25bddb6c.css.map",
+    "main.95867fd0.js.map": "/Frontend/static/js/main.95867fd0.js.map",
     "453.427611d3.chunk.js.map": "/Frontend/static/js/453.427611d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5d2b90d.css",
-    "static/js/main.346d138a.js"
+    "static/css/main.25bddb6c.css",
+    "static/js/main.95867fd0.js"
   ]
 }
