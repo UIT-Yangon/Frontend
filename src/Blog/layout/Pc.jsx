@@ -10,10 +10,11 @@ function Pc({bgPart}) {
       
       <div className="" >
        
-        <TinyNav className=" w-72 sticky top-[20px] z-10 overflow-y-auto me-0 inline-block" attr={0}/>
+        <TinyNav className=" w-72 sticky top-[20px] z-10 me-0 inline-block" attr={0}/>
+        
 
     
-        <Main className="ms-72 mt-[-238px]" style={{ marginTop: "232px"}}>
+        <Main className="ms-72 mt-[-367px]" style={{ marginTop: "232px"}}>
           <BgPart />
         </Main>
 

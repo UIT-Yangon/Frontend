@@ -3,6 +3,9 @@ import { useState } from 'react';
 import React from 'react';
 import { motion } from "framer-motion";
 import { HashLink } from 'react-router-hash-link';
+import ProgressBar from './ProgressBar';
+import ReadTime from './ReadTime';
+import ShareSpace from './ShareSpace';
 
 function NavBody() {
 
@@ -11,11 +14,8 @@ function NavBody() {
     const history = [0];
 
     const links = [
-        ["Overview","#overview"],
-        ["Research lab","#image"],
-        ["Offering subjects","#subjectOffer"],
-        ["Career opportunities","#career"],
-        ["Syllabus","#syllabus"],
+        ["discription","#overview"],
+        ["Photo","#photo"]
     ]
 
     const Ball = styled.div`
@@ -47,18 +47,25 @@ function NavBody() {
 
 
     return (
-      
-      <div className="p-[32px] rounded-[32px] bg-[#F5F5F5]" style={{ position: 'sticky', top: '50%'}}>
+      <div style={{ position: 'sticky', top: '50%'}}>
+      <div className="p-[32px] rounded-[32px] bg-[#F5F5F5]">
            <h5 className="text-left leading-[18px] text-[#1C1D2080] font-normal text-base mb-5">Contents</h5> 
                 <div className="relative">
                 <Ball>
-                    <Element index={data} initial={{ top: `${20*prev + 3}%` }} animate={{top: `${20*data + 3}%` }} ></Element>    
+                    <Element index={data} initial={{ top: `${50*prev + 7}%` }} animate={{top: `${50*data + 7}%` }} ></Element>    
                 </Ball> 
                 <nav className="list-none flex-col text-left hover:cursor-pointer">
                     {links.map((li,index) =>
                         <HashLink style={{ margin: 0, marginBottom: '8px', padding: 0}}  smooth to={li[1]}  key={index} className="text-base font-normal leading-[18px] mb-[8px] text-[#1C1D20]" onClick={(event) => handleClick(event,index)}>{li[0]}</HashLink>)}
                 </nav>
                 </div>
+
+               
+    </div>
+    <ProgressBar />
+    <ReadTime />
+    <ShareSpace />
+   
     </div>
     );
   

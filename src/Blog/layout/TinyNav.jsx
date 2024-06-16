@@ -12,10 +12,10 @@ function TinyNav({className, attr}) {
              <NavBody2 />
             
         </div>: 
-        <center className="lg:mt-16">
+        <div className="lg:mt-16">
         <NavBody /> 
         
-    </center>}
+    </div>}
 
     
       </div>

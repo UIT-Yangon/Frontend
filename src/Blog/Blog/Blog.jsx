@@ -1,7 +1,6 @@
 
 import React,{useState,useEffect } from 'react';
 import useResize from '../../utils/useResize';
-import '../../Styles/Degree.css';
 import Heading from '../Components/Heading';
 import BodyPart from './BodyPart';
 import { useLocation } from 'react-router-dom';
