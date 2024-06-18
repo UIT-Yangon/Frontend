@@ -22,7 +22,18 @@ import Map from './Maps/Map';
 import Visimisi from './Vision-mission/Visimisi';
 import Faq from './Faq/Faq';
 import CS from './Faculty/CS/CS';
+import C from './Faculty/C/C';
+import CST from './Faculty/CST/CST';
+import IS from './Faculty/IS/IS';
+
+import Myan from './Department/Myan/Myan';
+import Eng from './Department/Eng/Eng';
+import Phy from './Department/Phy/Phy';
 import Conference from './Conference/Conference';
+
+import FaculHead from './FaculHead/FaculHead';
+
+// import ChildConference from './Conference/Conference';
 import Pdf from './PdfPage/PdfPage';
 
 
@@ -35,6 +46,8 @@ import ES from './subLInks/Degree/Bachelor/ES/ES';
 import Csec from './subLInks/Degree/Bachelor/Csec/Csec';
 import Networking from './subLInks/Degree/Bachelor/Networking/Networking';
 import News from "./News/News";
+
+import Blog from './Blog/Blog/Blog';
 
 
 export default function Navigator() {
@@ -65,8 +78,26 @@ export default function Navigator() {
             <Route path="/about/contacts" element={<Contact />} />
             <Route path="/about/maps" element={<Map />} />
             <Route path="/about/campus" element={<FaciCampus />} />
+
+
+            <Route path="about/faculties" element={<FaculHead />} />
+
+            {/* Faculty */}
             <Route path="/faculties/computer-science" element={<CS />} />
+            <Route path="/faculties/computing" element={<C />} />
+            <Route path="/faculties/computer-systems-and-technologies" element={<CST />} />
+            <Route path="/faculties/information-science" element={<IS />} />
+
+            {/* Department of Language */}
+            <Route path="/departments/myanmar" element={<Myan />} />
+            <Route path="departments/english" element={<Eng />} />
+            <Route path="departments/physics" element={<Phy />} />
+
+
+
             <Route path="/about/conference" element={<Conference />} />
+            {/* <Route path="/about/conference/:id" element={<ChildConference />} /> */}
+            
             <Route path="/about/pdf" element={<Pdf />} />
             <Route path="/about/news" element={<News />} />
 
@@ -78,6 +109,8 @@ export default function Navigator() {
             <Route path="/academic/degree/bachelor/es" element={<ES />} />
             <Route path="/academic/degree/bachelor/csec" element={<Csec />} />
             <Route path="/academic/degree/bachelor/networking" element={<Networking />} />
+
+            <Route path="/about/blog" element={<Blog />} />
 
             
 

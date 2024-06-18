@@ -1,12 +1,3 @@
-
-
-
-
-    
-
-
-
-
 function Heading({name}) {
 
   return (
@@ -22,4 +13,3 @@ function Heading({name}) {
 }
 
 export default Heading;
-

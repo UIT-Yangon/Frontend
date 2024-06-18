@@ -1,6 +1,6 @@
 import Img from '../Images/syllabus.png';
 import styled from 'styled-components';
-import useFetch from '../utils/useFetch.js';
+// import useFetch from '../utils/useFetch.js';
 import React,{useState,useEffect} from 'react';
 
 const Container = styled.div`

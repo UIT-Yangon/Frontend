@@ -2,7 +2,7 @@ import '../../Styles/Degree.css';
 import '../../Styles/Faculty.css';
 import Headline from '../Components/Headline';
 import Navbar from '../../Nav/Navbar';
-import Vision from '../Components/Vision';
+import Vision from './Vision';
 import useResize from '../../utils/useResize';
 import React,{ useState } from 'react';
 import Major from '../Components/Major';
@@ -18,7 +18,7 @@ import Img from '../../Images/Faculty/CS/Trivia/Knowledge_Engineering.png'
 
 function Faculty(){
 
-    const windowWidth = useResize("Computer Science");
+    const windowWidth = useResize("Faculty of Computer Science");
 
     const header = [
         "Faculty of Computer Science",

@@ -7,7 +7,7 @@ const text = {
     vision: ["to become a center of excellence in teaching and research by building a strong research and teaching environment","to produce the highly qualified human resources as industry ready IT professionals and innovative leaders in the fields of computer science and the information technology related areas for the development of the country’s IT industry needs"]
 }
 
-const leftText = "computer tech";
+const leftText = "computer science";
 
 export default function VisionTextCon(){
     return (

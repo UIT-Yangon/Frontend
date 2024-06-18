@@ -3,6 +3,7 @@ import ReactPaginate from 'react-paginate';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const itemsData = [
   { id: 1, name: 'Item 1' },
@@ -88,7 +89,7 @@ const PaginatedItems = () => {
           <p className="text-[#1c1d20] opacity-50 text-[16px] md:text-[20px]">Filter By:</p>
           {categories.map((category,index) => (
             <div className="relative cursor-pointer" key={index} onClick={()=>handleCategoryChange(category.title)}>
-              <p className="text-[#1c1d20] text-[16px] md:text-[20px]" style={{ opacity: selectedCategory === category.title ? 1 : 0.5 }}>{category.title}</p>
+              <p className="text-[#1c1d20] text-[16px] md:text-[20px]" style={{ opacity: selectedCategory === category.title ? 1 : 0.5 }}> {category.title}</p>
               <span className="text-[#1c1d20] text-[10px] md:text-[12px] absolute" style={{left:'100%',top:0, opacity: selectedCategory === category.title ? 1 : 0.5 }}>{category.count}</span>
             </div>
             
@@ -104,7 +105,7 @@ const PaginatedItems = () => {
                         <p className='text-[#3798a6] mt-[-6px] p-[5px]'>.</p>
                         <p className='text-[#1c1d20] opacity-50 text-[16px] ps-[5px]'>News type</p>
                     </div>
-                    <h5 className='text-[#1c1d20] text-[20px] ps-[5px]'>{item.name}</h5>
+                    <h5 className='text-[#1c1d20] text-[20px] ps-[5px]'><Link reloadDocument to="/about/blog" id="navigation" >{item.name}</Link></h5>
                 </div>
             </div>
           </li>
