@@ -1,25 +1,9 @@
-import useAxios from '../utils/useAxios';
-import React,{useState,useEffect } from 'react';
-import axios from '../utils/axiosInstance';
-import { useSelector } from 'react-redux';
-
-
-
-    
-
-
-
-
-function Heading() {
-
-  const data = useSelector((state) => state.data.value.name);
-
-  
+function Heading({name}) {
 
   return (
     <>
     <section className="py-14 ">
-        <h1 className="text-3xl md:text-6xl lg:text-[70px] font-normal leading-80 text-left" >{data}</h1>
+        <h1 className="text-3xl md:text-6xl lg:text-[70px] font-normal leading-80 text-left" >{name}</h1>
     </section>
   
     </>
@@ -29,4 +13,3 @@ function Heading() {
 }
 
 export default Heading;
-

@@ -1,11 +1,17 @@
-import { useSelector } from 'react-redux';
+
 
 function Topics() {
 
+  // const {data,loading,error} = useFetch("http://localhost:4000/confrence/1")
+
+  
+  // if (!data || !data.topics || data.topics.length === 0) return <div>No topics found</div>;
 
 
 
-    const contents = useSelector((state) => state.data.value.topics);
+    // const content = [...data.topics]
+
+    const contents = ['Ai','Cloud','Deep Learning'];
 
     return (
       <>

@@ -1,12 +1,11 @@
 import '../../Styles/Degree.css';
 import '../../Styles/Faculty.css';
-import Headline from '../Components/Headline';
-import Navbar from '../../Nav/Navbar';
+import Headline from '../../Faculty/Components/Headline';
 import Vision from './Vision';
 import useResize from '../../utils/useResize';
 import React,{ useState } from 'react';
-import Major from '../Components/Major';
-import Member from '../Components/Member';
+import Major from '../../Faculty/Components/Major';
+import Member from '../../Faculty/Components/Member';
 import UltiWrapper from '../../Components/UltiWrapper';
 import Img1 from '../../Images/Faculty/CS/Teachers/Teacher_1.png';
 import Img2 from '../../Images/Faculty/CS/Teachers/Teacher_2.png';
@@ -14,20 +13,26 @@ import Img3 from '../../Images/Faculty/CS/Teachers/Teacher_3.png';
 import Img4 from '../../Images/Faculty/CS/Teachers/Teacher_4.png';
 import Img5 from '../../Images/Faculty/CS/Teachers/Teacher_5.png';
 import High from '../../Images/Faculty/CS/Trivia/High_Performance_Computing.png';
-import Img from '../../Images/Faculty/CS/Trivia/Knowledge_Engineering.png'
+import Img from '../../Images/Faculty/CS/Trivia/Knowledge_Engineering.png';
+import SubjectOffer from '../../subLInks/Degree/Bachelor/Components/SubjectOffer';
 
 function Faculty(){
 
-    const windowWidth = useResize("Faculty of Computer Science");
+    const windowWidth = useResize("Department of English");
 
     const header = [
-        "Faculty of Computer Science",
-        "(FCS)"
+        "Department of English",
+        ""
       ]
 
+      const content = [
+        "Different levels of English Language Proficiency",
+        
+      ];
+
       const headerMobile = [
-        "Faculty of computer",
-        "science(FCS)",
+        "Department of English",
+        "",
       ]
 
 
@@ -71,41 +76,25 @@ function Faculty(){
 
     const desktopLeftRow = [
       {
-        name: "High Performance Computing (HPC)",
-        image: High
-      },
-      {
-        name: "High Performance Computing (HPC)",
+        name: "Software Engineering (SE)",
         image: High
       }
     ]
 
     const desktopRightRow = [
       {
-        name: "Knowledge Engineering (KE)",
-        image: Img
-      },
-      {
-        name: "Knowledge Engineering (KE)",
+        name: "Software Engineering (SE)",
         image: Img
       }
     ]
 
     const mobile = [
       {
-        name: "High Performance Computing (HPC)",
+        name: "Software Engineering (SE)",
         image: High
       },
       {
-        name: "Knowledge Engineering (KE)",
-        image: Img
-      },
-      {
-        name: "High Performance Computing (HPC)",
-        image: High
-      },
-      {
-        name: "Knowledge Engineering (KE)",
+        name: "Business Information System (BIS)",
         image: Img
       }
     ]
@@ -122,7 +111,7 @@ function Faculty(){
             <UltiWrapper>
                     <Headline header={header} headerMobile={headerMobile} />
                     <Vision />
-                    <Major numText={numText} desktopLeftRow={desktopLeftRow} desktopRightRow={desktopRightRow} mobile={mobile} faculty={faculty} infoText={infoText}/>
+                    <SubjectOffer content={content} />
                     <Member members={members} />
             </UltiWrapper>
 

@@ -24,8 +24,8 @@ function CuroselDesktop() {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 0.5 // optional, default to 1.
+      items: 1.2,
+      slidesToSlide: 1 // optional, default to 1.
     }
   };
 
@@ -94,12 +94,12 @@ function CuroselDesktop() {
   }
 
   return (
-    <div className="py-20 relative flex flex-row w-[111%] ms-[-5.5%]">
-      <div className="ps-[5%] me-[57px] flex flex-col justify-between">
+    <div className="lg:py-20 py-16 relative flex lg:flex-row flex-col w-full lg:w-[111%] lg:ms-[-5.5%] lg:gap-y-0 gap-10 lg:gap-0">
+      <div className="lg:ps-[5%] me-[57px] flex flex-col justify-between w-full">
         <FirstText />
         <ButtonGroup handleNext={handleNext} handlePrevious={handlePrevious} left={left} right={right} />
       </div>
-      <div className="block w-[75%] cursor-grab active:cursor-grabbing">
+      <div className="block w-[103%] lg:w-[67%] min-[1250px]:w-[77%] cursor-grab active:cursor-grabbing">
         <Carousel
           responsive={responsive}
           ref={carouselRef}
@@ -111,14 +111,14 @@ function CuroselDesktop() {
             <div key={index} className="flex flex-col me-[32px]">
               <div className="rounded-[32px] w-full aspect-video bg-[#D9D9D9]"></div>
               <div className="relative mt-5">
-                <ul className="absolute top-0 left-[19px] list-disc marker:text-[#3798A6]">
-                  <li className="font-normal text-base leading-[18px] text-[#1C1D2080]">{item.type}</li>
+                <ul className="absolute top-0 left-[15px] list-disc marker:text-[#3798A6]">
+                  <li className="font-normal text-xs lg:text-base leading-[18px] text-[#1C1D2080]">{item.type}</li>
                 </ul>
-                <h5 className="text-xl font-normal leading-7 pt-[26px]">
+                <h5 className="lg:text-xl text-base font-normal leading-7 pt-[22px] lg:pt-[26px]">
                   <a href="https://tailwindcss.com/docs/font-size">{item.title}</a>
                 </h5>
               </div>
-              <p className="pt-5 font-[350] leading-[27px] text-lg">
+              <p className="pt-3 lg:pt-5 font-[350] leading-[21px] lg:leading-[27px] text-sm lg:text-lg">
                 {shortenIt(item.discription)}...
               </p>
             </div>

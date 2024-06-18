@@ -80,8 +80,8 @@ function Item2(){
               link: '/about/pdf'
             },
             {
-              text: 'Blog',
-              link: '/about/blog'
+              text: 'News',
+              link: '/about/news'
             },
           ]
         }

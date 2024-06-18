@@ -1,27 +1,7 @@
 import React,{useState} from 'react';
 import {motion,AnimatePresence, spring} from 'framer-motion';
-import { useSelector } from 'react-redux';
-import {styled} from 'styled-components';
 
 function OtherCommittie(){
-  const organizing =  useSelector((state) => state.data.value.organizing_committee);
-  const local = useSelector((state) => state.data.value.program_committee.local);
-  const foreign = useSelector((state) => state.data.value.program_committee.foreign);   
-  const program = local.concat(foreign);
-
-  const Div = styled.div`
-
-    background: url(${props => require(`../Images/${props.image}`)});
-    background-size: cover;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    background-position: center center;
-    
-    
-        
-
-
-    `;
 
     const people = {
       Organizing: [
@@ -41,7 +21,7 @@ function OtherCommittie(){
       ]
     }
 
-    const allPeople = [...organizing, ...program, ...local, ...foreign];
+    const allPeople = [...people.Organizing, ...people.Program, ...people.Local, ...people.Foreign];
 
     
 
@@ -54,16 +34,16 @@ function OtherCommittie(){
     const getCategoryData = () => {
       switch (selectedCategory) {
         case 'Organizing' :
-          return organizing;
+          return people.Organizing;
           
         case 'Program' :
-          return program;
+          return people.Program;
 
         case 'Local' :
-          return local;
+          return people.Local;
         
         case 'Foreign' :
-          return foreign;
+          return people.Foreign;
           
         default :
           return allPeople;
@@ -72,11 +52,11 @@ function OtherCommittie(){
     }
 
     const categories = [
-      { name: 'All', count: allPeople.length - program.length },
-      { name: 'Organizing', count: organizing.length },
-      { name: 'Program', count: program.length },
-      { name: 'Local', count: local.length},
-      { name: 'Foreign', count: foreign.length},
+      { name: 'All', count: allPeople.length },
+      { name: 'Organizing', count: people.Organizing.length },
+      { name: 'Program', count: people.Program.length },
+      { name: 'Local', count: people.Local.length},
+      { name: 'Foreign', count: people.Foreign.length},
     ];
 
     const categoryVariants = {
@@ -133,11 +113,11 @@ function OtherCommittie(){
                   {getCategoryData().map((person,index) => (
                     
                     <div key={index} className=" flex justify-start gap-[10px] w-[350px]">
-                      <Div className="w-[50px] md:w-[75px]  bg-[#ccc] rounded-md" image={person[0]}></Div>
+                      <div className="w-[50px] md:w-[75px]  bg-[#ccc] rounded-md"></div>
                       <div className="flex flex-col">
-                        <p className="text-[11px] md:text-[16px] text-[#3798a6]">{person[1].split(",")[0]}</p>
-                        <p className="text-[10px] md:text-[16px] text-[#1c1d20] opacity-70">{person[1].split(",")[1]}</p>
-                        <p className="text-[12px] md:text-[16px] text-[#1c1d20] opacity-50">{person[1].split(",")[2]}</p>
+                        <p className="text-[11px] md:text-[16px] text-[#3798a6]">{person.name}</p>
+                        <p className="text-[10px] md:text-[16px] text-[#1c1d20] opacity-70">{person.faculty}</p>
+                        <p className="text-[12px] md:text-[16px] text-[#1c1d20] opacity-50">{person.uni}</p>
                       </div>
                   </div>
                     

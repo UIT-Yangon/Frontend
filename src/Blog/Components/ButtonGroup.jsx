@@ -2,7 +2,7 @@ import React from 'react';
 
 const ButtonGroup = ({ handleNext, handlePrevious, left, right }) => {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row lg:justify-start justify-end lg:mt-0 mt-[-46px]">
       
       <div onClick={handlePrevious} className={`p-4 rounded-[32px] bg-[#FAFAFA] inline-block ${!left ? 'opacity-50' : 'opacity-100'} cursor-pointer`}>
       <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg" >

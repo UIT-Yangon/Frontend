@@ -18,16 +18,16 @@ import Img from '../../Images/Faculty/CS/Trivia/Knowledge_Engineering.png'
 
 function Faculty(){
 
-    const windowWidth = useResize("Faculty of Computer Science");
+    const windowWidth = useResize("Faculty of Information Science");
 
     const header = [
-        "Faculty of Computer Science",
-        "(FCS)"
+        "Faculty of Information Science",
+        "(FIS)"
       ]
 
       const headerMobile = [
-        "Faculty of computer",
-        "science(FCS)",
+        "Faculty of Information",
+        "Science(FIS)",
       ]
 
 
@@ -66,46 +66,30 @@ function Faculty(){
     ]
 
     const numText = "two";
-    const faculty= "FCS";
+    const faculty= "FIS";
     const infoText = "lorem ipsum";
 
     const desktopLeftRow = [
       {
-        name: "High Performance Computing (HPC)",
-        image: High
-      },
-      {
-        name: "High Performance Computing (HPC)",
+        name: "Software Engineering (SE)",
         image: High
       }
     ]
 
     const desktopRightRow = [
       {
-        name: "Knowledge Engineering (KE)",
-        image: Img
-      },
-      {
-        name: "Knowledge Engineering (KE)",
+        name: "Business Information System (BIS)",
         image: Img
       }
     ]
 
     const mobile = [
       {
-        name: "High Performance Computing (HPC)",
+        name: "Software Engineering (SE)",
         image: High
       },
       {
-        name: "Knowledge Engineering (KE)",
-        image: Img
-      },
-      {
-        name: "High Performance Computing (HPC)",
-        image: High
-      },
-      {
-        name: "Knowledge Engineering (KE)",
+        name: "Business Information System (BIS)",
         image: Img
       }
     ]

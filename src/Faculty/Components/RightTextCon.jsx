@@ -1,6 +1,6 @@
 import React from "react";
 import { useStateContext } from "./StateContext";
-import { AnimatePresence, motion } from 'framer-motion';
+import {  motion } from 'framer-motion';
 
 
 

@@ -18,16 +18,16 @@ import Img from '../../Images/Faculty/CS/Trivia/Knowledge_Engineering.png'
 
 function Faculty(){
 
-    const windowWidth = useResize("Faculty of Computer Science");
+    const windowWidth = useResize("Faculty of Computer Systems and Technologies");
 
     const header = [
-        "Faculty of Computer Science",
-        "(FCS)"
+        "Faculty of Computer Systems and Technologies",
+        "(FCST)"
       ]
 
       const headerMobile = [
-        "Faculty of computer",
-        "science(FCS)",
+        "Faculty of Computer Systems ",
+        "and Technologies(FCST)",
       ]
 
 
@@ -65,47 +65,39 @@ function Faculty(){
     
     ]
 
-    const numText = "two";
-    const faculty= "FCS";
+    const numText = "three";
+    const faculty= "FCST";
     const infoText = "lorem ipsum";
 
     const desktopLeftRow = [
       {
-        name: "High Performance Computing (HPC)",
+        name: "Embedded Systems (ES)",
         image: High
       },
       {
-        name: "High Performance Computing (HPC)",
+        name: "Cyber Security (CSec)",
         image: High
       }
     ]
 
     const desktopRightRow = [
       {
-        name: "Knowledge Engineering (KE)",
-        image: Img
-      },
-      {
-        name: "Knowledge Engineering (KE)",
+        name: "Communication and Networking (CN)",
         image: Img
       }
     ]
 
     const mobile = [
       {
-        name: "High Performance Computing (HPC)",
+        name: "Embedded Systems (ES)",
         image: High
       },
       {
-        name: "Knowledge Engineering (KE)",
+        name: "Communication and Networking (CN)",
         image: Img
       },
       {
-        name: "High Performance Computing (HPC)",
-        image: High
-      },
-      {
-        name: "Knowledge Engineering (KE)",
+        name: "Cyber Security (CSec)",
         image: Img
       }
     ]

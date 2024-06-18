@@ -18,7 +18,7 @@ function Item1(){
             },
             {
               text: 'Faculty',
-              link: '/'
+              link: '/about/faculties'
             },
             {
               text: 'FAQS',

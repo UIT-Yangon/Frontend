@@ -12,11 +12,8 @@ function NavBody2() {
     const [appear, setAppear] = useState(false);
 
     const links = [
-        ["Overview", "#overview"],
-        ["Research lab", "#image"],
-        ["Offering subjects", "#subjectOffer"],
-        ["Career opportunities", "#career"],
-        ["Syllabus", "#syllabus"],
+        ["discription","#overview"],
+        ["Photo","#photo"]
     ]
 
     const Ball = styled.div`
@@ -68,7 +65,7 @@ function NavBody2() {
                     animate={{
                         padding: (appear) ? "32px" : "20px 32px",
                         width: (appear) ? "288px" : "134px",
-                        height: (appear) ? "224px" : "58px"
+                        height: (appear) ? "160px" : "58px"
                     }}
 
                    
@@ -115,7 +112,7 @@ function NavBody2() {
 
                         >
                             <Ball>
-                                <Element index={data} initial={{ top: `${20 * prev + 3}%` }} animate={{ top: `${20 * data + 3}%` }} ></Element>
+                                <Element index={data} initial={{ top: `${50 * prev + 7}%` }} animate={{ top: `${50 * data + 7}%` }} ></Element>
                             </Ball>
                             <nav className="list-none flex-col text-left hover:cursor-pointer">
                                 {links.map((li, index) =>

@@ -11,7 +11,7 @@ function ShareSpace() {
     return (
       
       <div className="flex flex-col " >
-         <h1 className="mb-5">Share to</h1>
+         <h1 className="mb-5 text-[#1C1D2080] font-normal text-xs lg:text-base leading-[18px]">Share to</h1>
          <div className="flex flex-row gap-x-[10px]">
          <TelegramShareButton url={currentPageUrl}> 
             <TelegramIcon size={'32px'} round={true} bgStyle={ bgStyle } />
